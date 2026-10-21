@@ -1,0 +1,11 @@
+model,elpd_diff,se_diff,stacking_weight,model_display,y_position,figure
+rescorla_wagner_single_value,370.5612177372552,31.213614165757004,0.123357906232754,"Rescorla-
+Wagner",0,figure-2
+dual_lr_single_value,29.48247334982335,19.899261824313957,0.4392841537984353,"Dual learning-
+rate",1,figure-2
+pearce_hall_single_value,1475.4486538176316,57.30632609954542,0.0,"Pearce-
+Hall",2,figure-2
+leaky_beta_single_value,368.1752167947266,27.394172676180872,4.059171618622792e-13,"Leaky
+beta",3,figure-2
+leaky_beta_asymmetric_single_value,0.0,0.0,0.4373579399684063,"Asymmetric
+leaky beta",4,figure-2

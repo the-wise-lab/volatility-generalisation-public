@@ -1,0 +1,5 @@
+effect,pooled_r,n_points
+mu,0.9166451394506712,150
+beta_current_vol,0.8261315164724194,150
+beta_previous_vol,0.8052830375057656,150
+beta_current_previous_interaction,0.65179998349342,150

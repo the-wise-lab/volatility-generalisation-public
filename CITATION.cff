@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "Volatility generalisation: learning-rate adaptation across volatile and stable environments"
+version: 0.1.0
+# The code is under the MIT licence; the data and results files are under CC BY 4.0.
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/the-wise-lab/volatility-generalisation-public"
+abstract: >-
+  Code and data for a study of how learning rates adapt when people move
+  between volatile and stable environments. Participants did a
+  probabilistic-choice task in four versions, each made of two sequential
+  blocks. Five learning models are fitted to each condition. The fitted
+  learning rates are then related to questionnaire measures.
+keywords:
+  - learning rate
+  - volatility
+  - reinforcement learning
+  - computational modelling
+  - Bayesian modelling
+authors:
+  - given-names: Phoenix
+    family-names: Pavlik
+  - given-names: Tin Nok Isaac
+    family-names: Choy
+  - given-names: Marko
+    family-names: Dimitrovski
+  - given-names: Toby
+    family-names: Wise
+    email: toby.wise@kcl.ac.uk
+contact:
+  - given-names: Toby
+    family-names: Wise
+    email: toby.wise@kcl.ac.uk

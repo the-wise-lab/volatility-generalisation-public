@@ -1,0 +1,3 @@
+condition_a,condition_b,comparison,test,p_value_raw,p_label
+StableV4_2,StableV1,Stable→Stable vs Volatile→Stable,two-sided independent Welch t-test on logit learning rate,0.5686944221871196,n.s.
+VolatileV2,VolatileV3_2,Stable→Volatile vs Volatile→Volatile,two-sided independent Welch t-test on logit learning rate,0.00016987024267518382,***

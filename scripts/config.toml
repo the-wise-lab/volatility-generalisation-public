@@ -1,0 +1,90 @@
+# HPC Pipeline Configuration
+# This file controls settings for data preparation, model fitting, and HPC job submission.
+
+[project]
+name = "volatility_generalisation"
+base_dir = "."  # Relative to where scripts are run (usually project root)
+data_dir = "data"
+results_dir = "results"
+
+[data]
+# Input files
+main_data = "behavioural_data.csv.zip"
+
+# Quality control thresholds
+rolling_window = 10
+std_threshold = 0.2
+mean_choice_bounds = [1.25, 1.75]
+
+[fitting]
+models = [
+    "rescorla_wagner_single_value",
+    "dual_lr_single_value",
+    "pearce_hall_single_value",
+    "leaky_beta_single_value",
+    "leaky_beta_asymmetric_single_value",
+]
+
+conditions = [
+    "VolatileV1", 
+    "StableV1", 
+    "StableV2", 
+    "VolatileV2", 
+    "VolatileV3", 
+    "VolatileV3_2", 
+    "StableV4", 
+    "StableV4_2"
+]
+
+[mcmc]
+num_warmup = 2000
+num_samples = 4000
+num_chains = 4
+thinning = 1
+max_tree_depth = 10
+target_accept_prob = 0.95
+seed = 42
+
+[hpc]
+# SLURM resource allocation
+# Note: cpus_per_task should match num_chains for optimal parallelization
+#
+# Each job family has its own time and memory. The limits leave headroom above
+# the longest task and the highest memory peak measured in the full run, so a
+# job does not stop partway through for lack of time or memory. `--time` and
+# `--mem` on a submitter's command line override these values.
+#
+# volatility_fit (submit_jobs.py): longest task 1:30:15, highest peak 7.28 GiB.
+fit_time = "02:00:00"
+fit_memory = "12G"
+# Integrated model selection (submit_integrated_model_selection.py): longest
+# task 2:49:03, highest peak 21.10 GiB. 16G runs out of memory. This value
+# holds only for the current run size: 4 chains of 4,000 samples, four
+# second-block conditions and about 330 participants. A larger run needs a new
+# measurement.
+integrated_selection_time = "04:00:00"
+integrated_selection_memory = "32G"
+# Integrated model recovery (submit_integrated_model_recovery.py): longest task
+# 0:30:31, highest peak 4.76 GiB.
+integrated_recovery_time = "01:00:00"
+integrated_recovery_memory = "16G"
+# Parameter recovery (submit_parameter_recovery.py): longest task 0:08:15,
+# highest peak 3.87 GiB. 4G leaves too little room, so 6G is set.
+parameter_recovery_time = "01:00:00"
+parameter_recovery_memory = "6G"
+cpus_per_task = 4
+partition = "cpu"  # Change based on your cluster (e.g., cpu, gpu, short)
+
+# Command used by generated SLURM jobs to run Python from the locked uv environment.
+python_command = "uv run --frozen python"
+
+# Environment modules to load (list of strings)
+modules = [
+    # "uv",
+    # "gcc/11.2.0"
+]
+
+# Commands to run before starting python script
+pre_run_commands = [
+    # "uv sync --frozen"
+]

@@ -1,0 +1,10 @@
+condition,participants,excluded,kept,on_manual_exclusion_list,low_choice_variability,extreme_mean_choice,low_engagement_in_another_condition,incomplete_trials
+VolatileV1,101,19,82,0,13,4,11,0
+StableV1,101,19,82,0,9,4,14,0
+StableV2,101,16,85,0,8,3,11,0
+VolatileV2,101,16,85,0,10,3,10,0
+VolatileV3,100,23,77,0,17,9,14,0
+VolatileV3_2,100,23,77,0,13,5,19,0
+StableV4,100,14,86,0,8,3,8,0
+StableV4_2,100,14,86,0,7,2,10,0
+any_condition,402,72,330,0,64,27,72,0

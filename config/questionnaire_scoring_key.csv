@@ -1,0 +1,137 @@
+questionnaire_key,question_id,item_label,scoring
+STICSA,STICSA__1,fast heartbeat,forward
+STICSA,STICSA__2,muscle tension,forward
+STICSA,STICSA__3,anguish about personal troubles,forward
+STICSA,STICSA__4,fear of disapproval,forward
+STICSA,STICSA__5,indecision costs opportunities,forward
+STICSA,STICSA__6,dizziness,forward
+STICSA,STICSA__7,muscle weakness,forward
+STICSA,STICSA__8,trembling,forward
+STICSA,STICSA__9,imagining bad things ahead,forward
+STICSA,STICSA__10,stuck on a thought,forward
+STICSA,STICSA__11,poor memory,forward
+STICSA,STICSA__12,flushed face,forward
+STICSA,STICSA__13,expecting the worst,forward
+STICSA,STICSA__14,stiff limbs,forward
+STICSA,STICSA__15,dry throat,forward
+STICSA,STICSA__16,staying occupied to block worries,forward
+STICSA,STICSA__17,intrusive thoughts disrupt focus,forward
+STICSA,STICSA__18,My hands have seven fingers.,attention_check
+STICSA,STICSA__19,rapid shallow breaths,forward
+STICSA,STICSA__20,worry about thought control,forward
+STICSA,STICSA__21,nervous stomach,forward
+STICSA,STICSA__22,sweaty palms,forward
+IUS_12,IUS_12__1,upset by unexpected events,forward
+IUS_12,IUS_12__2,frustrated by missing information,forward
+IUS_12,IUS_12__3,foresight prevents surprises,forward
+IUS_12,IUS_12__4,minor surprises ruin plans,forward
+IUS_12,IUS_12__5,wanting certainty about what's ahead,forward
+IUS_12,IUS_12__6,dislike of being surprised,forward
+IUS_12,IUS_12__7,everything must be pre-planned,forward
+IUS_12,IUS_12__8,uncertainty limits life,forward
+IUS_12,IUS_12__9,frozen by uncertainty when acting,forward
+IUS_12,IUS_12__10,uncertainty impairs functioning,forward
+IUS_12,IUS_12__11,I feel surprised when surprising things happen to me.,attention_check
+IUS_12,IUS_12__12,slight doubt blocks action,forward
+PHQ_8,PHQ_8__1,lost interest and enjoyment,forward
+PHQ_8,PHQ_8__AC1,Difficulty standing on one leg,attention_check
+PHQ_8,PHQ_8__2,low mood,forward
+PHQ_8,PHQ_8__3,sleep problems,forward
+PHQ_8,PHQ_8__4,tiredness and low energy,forward
+PHQ_8,PHQ_8__5,appetite changes,forward
+PHQ_8,PHQ_8__6,low self-worth,forward
+PHQ_8,PHQ_8__7,poor concentration,forward
+PHQ_8,PHQ_8__8,slowness or restlessness,forward
+GAD_7,GAD_7__1,nervousness,forward
+GAD_7,GAD_7__AC1,Being scared of my own hair,attention_check
+GAD_7,GAD_7__2,uncontrollable worry,forward
+GAD_7,GAD_7__3,excessive worry across topics,forward
+GAD_7,GAD_7__4,difficulty unwinding,forward
+GAD_7,GAD_7__5,physical restlessness,forward
+GAD_7,GAD_7__6,irritability,forward
+GAD_7,GAD_7__7,dread of disaster,forward
+LOT_R,LOT_R__1,optimism under uncertainty,forward
+LOT_R,LOT_R__2,relaxes easily,not_scored_filler
+LOT_R,LOT_R__3,expects mishaps,reverse
+LOT_R,LOT_R__4,upbeat about the future,forward
+LOT_R,LOT_R__5,enjoys friendships,not_scored_filler
+LOT_R,LOT_R__6,I enjoy it when good things happen to me.,attention_check
+LOT_R,LOT_R__7,values staying busy,not_scored_filler
+LOT_R,LOT_R__8,low expectations of success,reverse
+LOT_R,LOT_R__9,even-tempered,not_scored_filler
+LOT_R,LOT_R__10,seldom expects good outcomes,reverse
+LOT_R,LOT_R__11,expects positives to outweigh negatives,forward
+BIS,BIS__24,fast-moving thoughts,forward
+BIS,BIS__25,good focus,reverse
+BIS,BIS__26,plans for stable work,reverse
+BIS,BIS__27,speaks before thinking,forward
+BIS,BIS__28,impulsive actions,forward
+BIS,BIS__29,spontaneous decisions,forward
+BIS,BIS__30,"consistent, careful thinking",reverse
+BIS,BIS__31,impulse buying,forward
+BIS,BIS__32,spends beyond income,forward
+AES,AES__33,broad curiosity,reverse
+AES,AES__34,daily productivity,reverse
+AES,AES__35,lives intensely,reverse
+AES,AES__36,values finishing tasks,reverse
+AES,AES__37,values daily productivity,reverse
+AES,AES__38,self-starting,reverse
+AES,AES__39,I have no feet.,attention_check
+AES,AES__40,feels motivated,reverse
+EAT,EAT_51,fear of weight gain,reverse
+EAT,EAT_52,drive for thinness,reverse
+SRDS,SRDS__1,unclouded thinking,reverse
+SRDS,SRDS__2,unexplained tiredness,forward
+SRDS,SRDS__3,usual tasks feel easy,reverse
+SRDS,SRDS__4,restlessness,forward
+SRDS,SRDS__5,hopeful outlook,reverse
+SRDS,SRDS__6,decides easily,reverse
+SRDS,SRDS__7,sense of being valued,reverse
+SRDS,SRDS__8,fulfilling life,reverse
+SRDS,SRDS__9,enjoys former pastimes,reverse
+STAI,STAI__10,feels good,reverse
+STAI,STAI__11,content with self,reverse
+STAI,STAI__12,envies others' happiness,forward
+STAI,STAI__13,I feel like I have always been a human being,attention_check
+STAI,STAI__14,sense of failure,forward
+STAI,STAI__15,feeling composed,reverse
+STAI,STAI__16,overwhelmed by mounting problems,forward
+STAI,STAI__17,happiness,reverse
+STAI,STAI__18,troubling thoughts,forward
+STAI,STAI__19,low confidence,forward
+STAI,STAI__20,sense of security,reverse
+STAI,STAI__21,contentment,reverse
+STAI,STAI__22,bothered by trivial thoughts,forward
+STAI,STAI__23,emotionally stable,reverse
+STAI,STAI__24,tense when reviewing concerns,forward
+OCI,OCI__40,excessive checking,forward
+OCI,OCI__41,upset by disorder,forward
+OCI,OCI__42,I frequently find myself cleaning my boat before going to bed.,attention_check
+OCI,OCI__43,compulsive counting,forward
+OCI,OCI__44,thoughts feel uncontrollable,forward
+OCI,OCI__45,collects unneeded items,forward
+OCI,OCI__46,upset when arrangements are disturbed,forward
+OCI,OCI__47,washes when feeling unclean,forward
+OCI,OCI__48,unwanted distressing thoughts,forward
+OCI,OCI__49,difficulty discarding,forward
+OCI,OCI__50,needs specific ordering,forward
+OCI,OCI__51,persistent unpleasant thoughts,forward
+LSAS,LSAS__53,joining group discussions,forward
+LSAS,LSAS__54,addressing authority figures,forward
+LSAS,LSAS__55,public performance or speech,forward
+LSAS,LSAS__56,attending parties,forward
+LSAS,LSAS__57,working under observation,forward
+LSAS,LSAS__58,writing under observation,forward
+LSAS,LSAS__59,phoning acquaintances,forward
+LSAS,LSAS__60,chatting with acquaintances,forward
+LSAS,LSAS__61,encountering new people,forward
+LSAS,LSAS__62,arriving after others sat down,forward
+LSAS,LSAS__63,being in the spotlight,forward
+LSAS,LSAS__64,voicing views in meetings,forward
+LSAS,LSAS__65,disagreeing with acquaintances,forward
+LSAS,LSAS__66,eye contact with acquaintances,forward
+LSAS,LSAS__67,group presentation,forward
+LSAS,LSAS__68,approaching a romantic interest,forward
+LSAS,LSAS__69,returning purchases,forward
+LSAS,LSAS__70,hosting guests,forward
+LSAS,LSAS__71,refusing pushy sellers,forward

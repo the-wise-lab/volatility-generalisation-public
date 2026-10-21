@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "volatility_generalisation"
+version = "0.1.0"
+description = "Analysis code for how learning rates adapt between volatile and stable environments"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Phoenix Pavlik"},
+    {name = "Tin Nok Isaac Choy"},
+    {name = "Marko Dimitrovski"},
+    {name = "Toby Wise", email = "toby.wise@kcl.ac.uk"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "pingouin",
+    "matplotlib",
+    "jax",
+    "jaxlib",
+    "numpyro",
+    "toml",
+    "arviz",
+    "seaborn",
+    "rich",
+    "tqdm",
+    "optax",
+    "blackjax",
+    "factor-analyzer",
+    # stats-utils imports networkx for its factor-loading plots but does not
+    # list it as a dependency, so it is listed here.
+    "networkx",
+    "scikit-learn",
+    "statsmodels",
+    "behavioural-modelling @ git+https://github.com/the-wise-lab/behavioural-modelling.git@4ec50a1f3f14242a3c521391cdc12b05fa1389c5",
+    "stats-utils @ git+https://github.com/the-wise-lab/stats-utils.git@ff73706dd664b2df46fb349db922e347121b5639",
+]
+
+[project.urls]
+Repository = "https://github.com/the-wise-lab/volatility-generalisation-public"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+    "mypy",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["volatility_generalisation/tests"]
+markers = [
+    "documentation: checks that documentation and docstrings match the code",
+    "rendering: checks that complete figures and their files are written",
+    "real_data: checks that run the real analysis on the committed data and are slow",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["volatility_generalisation*"]
+exclude = ["tests*", "docs*"]
+
+[tool.setuptools.package-data]
+"volatility_generalisation.figures" = ["fonts/*.ttf", "fonts/OFL.txt", "fonts/README.md"]

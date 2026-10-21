@@ -1,0 +1,30 @@
+# Common parameters across multiple models
+[common]
+# temperature >= 0.02, not 0.2. Many participants choose more consistently than
+# a temperature of 0.2 allows. With that bound, other parameters (kappa, tau)
+# had to absorb the extra consistency and some fits did not converge (#65).
+temperature = { min = 0.02, max = 0.6, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_sigma_scale = 1.0, prior_offset_sigma = 0.5 }
+
+[rescorla_wagner_single_value]
+learning_rate = { min = 0.0, max = 1.0, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_sigma_scale = 1.0, prior_offset_sigma = 0.5 }
+
+[dual_lr_single_value]
+learning_rate_pos = { min = 0.0, max = 1.0, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_sigma_scale = 1.0, prior_offset_sigma = 0.5 }
+learning_rate_neg = { min = 0.0, max = 1.0, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_sigma_scale = 1.0, prior_offset_sigma = 0.5 }
+
+[pearce_hall_single_value]
+# gamma >= 0.2 keeps associability tracking recent prediction errors. Below
+# this, associability only drifts from its 0.5 start, so the model acts like
+# Rescorla-Wagner with a decaying learning rate and the posterior splits into
+# two modes that MCMC chains cannot move between.
+kappa = { min = 0.0, max = 1.0, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_beta_sigma = 0.10, prior_sigma_scale = 0.25, prior_offset_sigma = 0.20 }
+gamma = { min = 0.2, max = 0.99, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_beta_sigma = 0.15, prior_sigma_scale = 0.25, prior_offset_sigma = 0.25 }
+
+[leaky_beta_single_value]
+tau = { min = 0.0, max = 5.0, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_sigma_scale = 1.0, prior_offset_sigma = 0.5 }
+decay = { min = 0.0, max = 1.0, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_sigma_scale = 1.0, prior_offset_sigma = 0.5 }
+
+[leaky_beta_asymmetric_single_value]
+tau_pos = { min = 0.0, max = 5.0, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_sigma_scale = 1.0, prior_offset_sigma = 0.5 }
+tau_neg = { min = 0.0, max = 5.0, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_sigma_scale = 1.0, prior_offset_sigma = 0.5 }
+decay = { min = 0.0, max = 1.0, prior_mu_mean = 0.0, prior_mu_sigma = 0.45, prior_sigma_scale = 1.0, prior_offset_sigma = 0.5 }
